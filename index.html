@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styleSheet.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header2">
+          <h3 class="card-header-text">One Plus One Healthy India 2025 Full Body Checkup Advance</h3>
+          <div class="badge gradient-text">102 <span class="badge-text">Tests</span></div>
+        </div>
+        <p class="tests">
+          <span>Tests Included:</span> Blood Glucose Fasting, Vitamin B12, Vitamin D Total... <a href="#">more</a>
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="info-row">
+        <div>12 hrs Fasting <br />Required</div>
+        <div>Recommended <br />For Everyone</div>
+        <div>Reports within <br />72 hrs</div>
+      </div>
+
+      <div class="card-footer">
+        <div>
+          <div class="price">₹1325 <span class="original">₹3155</span></div>
+          <div class="offer">UPTO 58% OFF</div>
+        </div>
+        <button class="book-btn" onclick="openModal()">Book Now</button>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closeModal()"></div>
+    <div class="modal" id="modal">
+      <p>🎉 Thank you! Your test has been added to the cart.</p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+
+    <script>
+      function openModal() {
+        document.getElementById("overlay").classList.add("active");
+        document.getElementById("modal").classList.add("active");
+        setTimeout(closeModal, 3000);
+      }
+
+      function closeModal() {
+        document.getElementById("overlay").classList.remove("active");
+        document.getElementById("modal").classList.remove("active");
+      }
+    </script>
+  </body>
+</html>
